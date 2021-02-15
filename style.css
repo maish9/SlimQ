@@ -1,0 +1,215 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.nav_bar{
+    height: 53px;
+    top: 0;
+    position: sticky;
+    background:rgb(64, 100, 88);
+    margin-bottom: 20px;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+}
+.logo{
+    height: 30px;
+    margin: 10px 8px;
+    color :orange;
+    font-family: monospace;
+}
+.form_control{
+
+    margin-top: 13px;
+    margin-left: 2px;
+    width: 30%;
+    height: 30px;
+    border: 1px solid orange !important;
+    box-shadow: none !important;
+}
+.input_type{
+    background: orange;
+    border: 1px solid orange;
+    margin: 8.9px 10px 3px 0;
+    cursor: pointer;
+}
+.search_bar{
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search{
+    margin-top: 14x;
+    margin-left: 15px;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.menu_bar{
+    width: 40px;
+    height: 55px;
+    float: right;
+}
+.menu_bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu_bar ul li{
+    margin-top: 13px;
+    border-left: 1px solid #fff;
+    text-align: center;
+    white-space: nowrap;
+    list-style-type: none;
+    padding: 9px 40px;;
+    background-color: orange;
+    cursor:pointer;
+
+}
+.menu_bar ul li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.fa-shopping-cart{
+    margin-right: 5px;
+}
+.fa-money{
+    margin-right: 5px;
+}
+.fa-exchange{
+    margin-right: 5px;
+}
+.fa-sign-in{
+    margin-right: 5px;
+}
+.fa-hand-o-right{
+    margin-right: 5px;
+}
+.side_menu{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background:orange;
+    
+}
+.side_menu ul{
+    margin-left: 8px;
+    margin-bottom: 300px;
+}
+.side_menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side_menu ul li:hover{
+  color : rgb(64, 100, 88);
+}
+.side_menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side_menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    color:orange;
+    background:rgb(64, 100, 88);
+    box-shadow:1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.side_menu ul li ul:hover li{
+    color:orange;
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-left: 8px;
+    float:right;
+}
+#menu_btn,#close_btn{
+    font-size: 30px;
+    margin: 10px;
+    color: orange;
+    display: none;
+}
+
+@media only screen and (max-width:980px){
+    .nav_bar{
+        height: 118px;
+        border-bottom: 0;
+       
+    }
+    .search_bar{
+        width:100%;
+    }
+    .menu_bar{
+        width: 100%;
+    }
+    .menu_bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu_bar ul li{
+        height: 60px;
+        width: 100px;
+    }
+}  
+
+@media only screen and (max-width:980px){
+
+    .side_menu{
+      width: 34%;
+      z-index: 20;
+      top:133px;
+      position: fixed;
+      font-size: 12px;
+      display: none;
+     }   
+     .side_menu ul li ul{
+         top: 133px;
+     } 
+     .side_menu  ul li :hover ul{
+         margin-left: 33%;
+     }  
+     #menu_btn{
+         display: block;
+     } 
+}
+.slider{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+    background-size: cover;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px orange;
+}
+carousel-indicators{
+    z-index: 1;
+}
+@media only screen and (max-width:980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.categories{
+    margin:50px 10px;
+}
+.categories img{
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: 80px;
+    transition: 1s;
+    cursor: pointer;
+}
+.categories img:hover{
+    transform: scale(1.1);
+}
