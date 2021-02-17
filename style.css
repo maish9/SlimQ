@@ -232,7 +232,8 @@ carousel-indicators{
   margin-left: 170px;
 }
 
-<!-----------------------product_on_sale--------------------------->
+/*--------------------------Product on Sale -------------------------*/
+
 .product_top img{
   width: 100%;
 }
@@ -262,8 +263,8 @@ carousel-indicators{
 }
 .product_on_sale:hover .underlaying_icons{
   opacity: 1;
-  margin-left: 5%
-  transition :0.5s;
+  margin-left: 5%;
+  transition: 0.5s;
 }
 
 /*---------------------Product-Bottom-------------------*/
