@@ -4,7 +4,10 @@
     padding: 0;
 }
 body{
+    background-image: url("images/back.jpg");
+    overflow-x: hidden;
     font-family: sans-serif;
+    
 }
 .nav_bar{
     height: 53px;
@@ -321,4 +324,21 @@ carousel-indicators{
  .footer p{
      margin-left: 50px;
      font-size: 12px;
+ }
+ .footer img{
+     width: 30%;
+     margin:5px 80px;
+     margin-left: 50px;
+     background: orange;
+     border-color: orange;
+ }
+ .copyright {
+     margin-top: 80px;
+     text-align: center;
+     font-size: 15px;
+     padding-bottom: 20px;
+ }
+ .footer hr{
+     margin-top: 10px;
+     background-color:orange ;
  }
