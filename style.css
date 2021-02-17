@@ -300,7 +300,6 @@ carousel-indicators{
   display: block;
 }
 .feature_text{
-  /*word-wrap: break-word;*/
   margin-top: 5px;
   width: 80%;
   padding-left: 10px;
@@ -308,3 +307,18 @@ carousel-indicators{
 .feature_box{
   padding-top:20px;
 }
+ /*--------------Footer--------------------------*/
+ .footer{
+     margin-top: 50px;
+     background:rgb(64, 100, 88);
+     color: #fff;
+ }
+ .footer h1{
+     margin:25px 0;
+     margin-left: 50px;
+     font-size: 15px;
+ }
+ .footer p{
+     margin-left: 50px;
+     font-size: 12px;
+ }
