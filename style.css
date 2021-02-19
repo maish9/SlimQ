@@ -190,7 +190,7 @@ body{
 .carousel{
     box-shadow: 1px 1px 4px 1px rgb(231, 164, 100);
 }
-carousel-indicators{
+.carousel-indicators{
     z-index: 1;
 }
 @media only screen and (max-width:980px){
@@ -345,49 +345,82 @@ carousel-indicators{
      background-color:rgb(231, 164, 100) ;
  }
 
- /*-------------------Laptops In Store-----------------------*/
+ /*-------------------In Store-----------------------*/
 
-
- .notebook_available{
+.laptop img{
+    width: 100%;
+    padding: 2px 2px;
+    background-size: cover;
+    border-color: rgb(231, 164, 100);
+    margin-top: 50px;
+}
+.notebook_available{
     background: rgb(78, 78, 207);
     color: #fff;
     width: 180px;
+    margin-left: 1px;
     padding: 4px 10px;
-    height: 40px;
+    height: 30px;
     margin-bottom: 30px;
-    display: flex; 
+    display: flex;
  }
  .notebook_available p{
      font-size: 24px;
  }
- .col-md-8 h2{
-     font-size: 20px;
-     color:gray;
- }
- .col-md-8 h3{
-     font-size: 22px;
-     color: gray;
- }
- .col-md-8 h4{
-     font-size: 20px;
-     color: gray;
- }
- .col-md-8 i{
-     color: rgb(231, 164, 100);
- }
- .col-md-8 h5{
-     color: gray;
-     font-size: 12px;
- }
  .notebook_available::after{
   content: '';
-  border-top: 40px solid rgb(78, 78, 207);
+  border-top: 30px solid rgb(78, 78, 207);
   border-right: 50px solid transparent;
   position: absolute;
   display: flex;
   margin-top: -4px;
   margin-left: 170px;
  }
+
+ /*--------------------------------Out of Stock-----------------------*/
+ .notebook_not_available{
+    background: rgb(224, 74, 74);
+    color: #fff;
+    width: 180px;
+    margin-left: 1px;
+    padding: 4px 10px;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+ }
+ .notebook_not_available::after{
+    content: '';
+    border-top: 30px solid rgb(224, 74, 74);
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+   }
+ .notebook_not_available p{
+    font-size: 24px;
+}
+
+ .col-md-8 h2{
+     font-size: 25px;
+     color: gray;
+ }
+ .col-md-8 h3{
+     font-size: 15px;
+     color: gray;
+ }
+ .col-md-8 h4{
+    font-size: 15px;
+    color: gray;
+}
+.col-md-8 i{
+    font-size: 13px;
+    color:rgb(231, 164, 100) ;
+}
+.col-md-8 h5{
+    font-size: 13px;
+    color: rgb(231, 164, 100);
+}
  .laptop .price{
      color: rgb(231, 164, 100);
      font-size: 26px;
@@ -399,6 +432,7 @@ carousel-indicators{
      height: 30px;
      text-align: center;
      width: 30px;
+     
  }
  .laptop .btn-primary{
      background: rgb(231, 164, 100);
@@ -408,3 +442,14 @@ carousel-indicators{
      border: none;
      box-shadow: none;
  } 
+
+ @media only screen and (max-width:980px){
+     .laptop{
+         width: 100%;
+         margin-left: 0;
+     }
+     .laptop img{
+         width: 100%;
+     }
+    
+ }
